@@ -1,0 +1,6 @@
+# See example in canvas source code: config/redis.yml.example
+# These values were recommended by https://elearningevolve.com/blog/install-canvas-lms/
+production:
+  url:
+    - redis://localhost
+

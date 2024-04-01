@@ -1,0 +1,13 @@
+production: &default
+  # This should be inserted safely before canvas starts.
+  #encryption_key: ''
+  lti_iss: 'https://canvas.instructure.com'
+
+development:
+  <<: *default
+  encryption_key: not-a-real-key
+
+test:
+  <<: *default
+  encryption_key: not-a-real-key
+

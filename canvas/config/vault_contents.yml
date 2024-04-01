@@ -1,0 +1,30 @@
+# See example in canvas source code: config/vault_contents.yml.example
+# These values were recommended by https://elearningevolve.com/blog/install-canvas-lms/
+production:
+  'sts/testaccount/sts/canvas-shards-lookupper-dev':
+    access_key: 'fake-access-key'
+    secret_key: 'fake-secret-key'
+    security_token: 'fake-security-token'
+  'sts/testaccount/sts/canvas-release-notes':
+    access_key: 'fake-access-key'
+    secret_key: 'fake-secret-key'
+    security_token: 'fake-security-token'
+  'app-canvas/data/secrets':
+    data:
+      canvas_security:
+	# These should be inserted safely before canvas starts
+        #encryption_secret: ''
+        #signing_secret: ''
+      lti_platform_storage:
+        signing_secret: 'astringthat  isactually32byteslong'
+      inst_fs:
+        app_host: 'http://api.inst-fs.docker'
+        # this is just "super-sekret-value", base64-encoded:
+        secret: 'c3VwZXItc2VrcmV0LXZhbHVlCg=='
+
+test:
+  'sts/testaccount/sts/canvas-shards-lookupper-test':
+    access_key: 'fake-access-key'
+    secret_key: 'fake-secret-key'
+    security_token: 'fake-security-token'
+

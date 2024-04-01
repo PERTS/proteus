@@ -1,0 +1,9 @@
+# See example in canvas source code: config/cache_store.yml.example
+# These values were recommended by https://github.com/instructure/canvas-lms/wiki/Production-Start#generate-assets
+test:
+  cache_store: redis_cache_store
+development:
+  cache_store: redis_cache_store
+production:
+  cache_store: redis_cache_store
+
